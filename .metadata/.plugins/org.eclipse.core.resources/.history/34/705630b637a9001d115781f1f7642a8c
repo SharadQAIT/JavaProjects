@@ -1,0 +1,10 @@
+package Bank;
+
+public class ATM
+{
+	public static void main(String[] args) 
+	{
+	Bank obj=new Bank();
+	obj.accountinfo(123456789, 123, 2000);
+	}
+}

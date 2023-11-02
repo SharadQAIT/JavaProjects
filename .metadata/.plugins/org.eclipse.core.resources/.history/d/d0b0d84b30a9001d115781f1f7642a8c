@@ -1,0 +1,18 @@
+package Bank;
+
+public class Bank 
+{
+	public int Accountnum=1234567890;
+	public int pin=1234;
+	public int amount=10000;
+	
+	public void accountinfo(int account , int addpin, int addbalance)
+	{
+		if(account==Accountnum && addpin==pin)
+		{
+			int currentbalance=addbalance-amount;
+			System.out.println("The withdrwal amount is "+amount);
+		}
+	}
+	
+}

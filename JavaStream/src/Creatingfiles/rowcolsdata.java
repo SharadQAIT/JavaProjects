@@ -1,0 +1,53 @@
+package Creatingfiles;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class rowcolsdata 
+
+{
+	public static void main(String[] args) throws IOException
+	{
+		// TODO Auto-generated method stub
+		
+		//Steam Connectivity
+		File f=new File("D:\\Eclipse Workspace\\Filewriting\\Test.txt");
+		FileWriter fw=new FileWriter(f,true);  // True for did not append two data with each other
+		BufferedWriter writer=new BufferedWriter(fw);
+		
+		
+		
+		for(int i=0;i<4;i++)
+		{
+			for(int j=0;j<3;j++)
+			{
+				int num= (int) (Math.random()*100);
+				writer.write(num+"\t");
+			}
+			writer.newLine();
+		
+		}
+		
+		//Writing inside the file
+		
+	/*	writer.write("Sharad");
+		writer.newLine();
+		writer.write("AMC HighSchool");
+		writer.newLine();
+		writer.write("Infotech Company");
+	*/
+	
+	/*	writer.write("Ajay");
+		writer.newLine();
+		writer.write("MSM HighSchool");
+		writer.newLine();
+		writer.write("Solution Analyst Company");
+	*/	
+		//Closing stream
+		writer.close();
+		System.out.println("File Created !!");
+	}
+
+}

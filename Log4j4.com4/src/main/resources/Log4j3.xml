@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+<!-- HTML Appender-->
+<appender name ="htmlappender" class="org.apache.log4j.DailyRollingFileAppender">
+<para name="File" value="D:/EclipseWorkspace/Java_Tutorials/Log4j4.com4/src/test/resources/Log.HTML"/>
+<para name="DatePattern" value="'.'yyyy-MM-DD-'.html'"/>
+<layout class="org.apache.log4j.HTMLLayout"/>
+</appender>
+
+  <Loggers>
+    <Root level="">
+      <AppenderRef ref="htmlappender"/>
+    </Root>
+
+  </Loggers>
+</Configuration>

@@ -1,0 +1,17 @@
+package Bank;
+
+public class Bank 
+{
+	public int Accountnum=1234567890;
+	public int pin=1234;
+	public int amount=10000;
+	
+	public void accountinfo(int account , int Pin, int amount)
+	{
+		if(account==Accountnum && pin==Pin)
+		{
+			
+		}
+	}
+	
+}

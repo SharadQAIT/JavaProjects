@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+<SMTP name="SmtpAppender" 
+        to="glenmax688@gmail.com" 
+        from="sharad.khairnar.sa@gmail.com"
+        smtpHost="smtp.gmail.com" 
+        smtpPort="465"
+        bufferSize="4"
+        smtpUsername="sharad.khairnar.sa@gmail.com"
+        smtpPassword="infotechsp12*"
+        smtpProtocol="smtps"
+        smtpDebug="true"
+        ignoreExceptions="false" 
+        subject="Test">
+
+  </SMTP>
+
+  <Loggers>
+    <Root level="ERROR">
+      <AppenderRef ref="SmtpAppender"/>
+    </Root>
+
+  </Loggers>
+</Configuration>

@@ -1,0 +1,32 @@
+package Bank;
+
+public class Bank 
+{
+	public int Accountnum=1234567890;
+	public int pin=1234;
+	public int amount=10000;
+	
+	public void accountinfo(int account , int addpin, int Retrievebalance)
+	{
+		if(account==Accountnum && addpin==pin)
+		{
+			
+			if(Retrievebalance<=amount)
+			{
+							
+				int currentbalance=amount-Retrievebalance;
+				System.out.println("Your withdrwal amount is"+Retrievebalance);
+			
+			}
+			else
+			{
+				System.out.println("Insufficient Balance");
+			}
+		}
+		else 
+		{
+			System.out.println("Invalid Crdentials");
+		}
+	}
+	
+}
